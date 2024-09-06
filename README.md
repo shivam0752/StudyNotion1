@@ -75,3 +75,12 @@ StudyNotion follows a client-server architecture with:
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/StudyNotion.git
+2. Navigate to the project directory:
+   ```bash
+   cd StudyNotion
+3. Install dependencies for both the client and server:
+   ```bash
+   npm install
+4. Start the development server:
+   ```bash
+    npm run dev
