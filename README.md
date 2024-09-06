@@ -1,31 +1,77 @@
-# React & Tailwind CSS Starter Pack
+# StudyNotion
 
-This is a starter pack for creating React projects with Tailwind CSS configured. It uses React version **18.2** and Tailwind CSS version **3.2**.
+StudyNotion is a fully functional ed-tech platform that enables users to create, consume, and rate educational content. It is built using the MERN stack, including **ReactJS**, **NodeJS**, **MongoDB**, and **ExpressJS**.
 
-## Usage
+## Features
 
-This starter pack includes a basic setup for using **Tailwind CSS with React**. To start building your own components and styles, follow these steps:
+- **For Students:**
+  - Browse and enroll in courses
+  - View and rate courses
+  - Manage account details
+  - Add courses to wishlist and checkout
 
-1. Clone the repository to your local machine.
-    ```sh
-    git clone https://github.com/thepranaygupta/react-tailwind-css-starter-pack.git
-    ```
+- **For Instructors:**
+  - Create, update, and manage courses
+  - View insights and feedback on courses
 
-1. Install the required packages.
-    ```sh
-    cd react-tailwind-css-starter-pack
-    npm install
-    ```
+- **For Admin (Future Scope):**
+  - Platform-wide insights
+  - Manage users and instructors
 
-1. Start the development server.
-    ```sh
-    npm start
-    ```
-1. Open the project in your browser at [`http://localhost:3000`](http://localhost:3000) to view your project.
-1. Create your React components and add your styles using Tailwind classes. You can also create new CSS files and import them into your components.
+## Technologies Used
 
-The project is set up to use `postcss-cli` to process your CSS files. You can add your own `tailwind.config.js` file to customize your Tailwind setup.
+- **Front-End:**
+  - ReactJS
+  - Tailwind CSS for styling
+  - Redux for state management
+  - RESTful API integration
 
-## Contributing
+- **Back-End:**
+  - Node.js
+  - Express.js
+  - MongoDB (via Mongoose)
+  - JWT for authentication
+  - Bcrypt for password hashing
 
-Contributions are welcome! If you have any suggestions or find any issues, please feel free to open an issue or a pull request.
+- **Media Storage:**
+  - Cloudinary for media management
+
+- **Payment Integration:**
+  - Razorpay for handling payments
+
+## API Endpoints
+
+- `POST /api/auth/signup`: Create a new user account
+- `POST /api/auth/login`: Log in and generate a JWT token
+- `POST /api/auth/verify-otp`: Verify OTP for user authentication
+- `GET /api/courses`: Fetch all courses
+- `POST /api/courses`: Create a new course (instructor only)
+
+## System Architecture
+
+StudyNotion follows a client-server architecture with:
+- **Front-End**: Built with ReactJS, it communicates with the backend via REST API.
+- **Back-End**: Built with NodeJS and ExpressJS, handling user authentication, course management, and content delivery.
+- **Database**: MongoDB stores course content, user data, and other related information.
+
+## Deployment
+
+- **Frontend**: Deployed using Vercel
+- **Backend**: Deployed using Render or Railway
+- **Database**: Hosted on MongoDB Atlas
+- **Media**: Stored on Cloudinary
+
+## Future Enhancements
+
+- Gamification features (badges, points, leaderboards)
+- Personalized learning paths
+- Social learning features (group discussions, feedback)
+- Mobile app development
+- Machine learning-powered recommendations
+- Virtual reality integration for immersive learning
+
+## How to Run the Project Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/StudyNotion.git
