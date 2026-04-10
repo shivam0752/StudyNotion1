@@ -74,7 +74,7 @@ StudyNotion follows a client-server architecture with:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/shivam0752/StudyNotion.git
+   git clone https://github.com/shivam0752/StudyNotion1.git
 2. Navigate to the project directory:
    ```bash
    cd StudyNotion
